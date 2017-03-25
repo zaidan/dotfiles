@@ -24,6 +24,7 @@ can use this repository for your custom dotfiles, that are more general - e.g.
 not bound to a single device or user account. If you want to share some
 dotfiles, place them here.
 
+See [zaidan/dotfiles-local](https://github.com/zaidan/dotfiles-local) for an example.
 
 ## Private dotfiles (optionally)
 Clone or create your `dotfiles-private` repository to `~/dotfiles-private`.
