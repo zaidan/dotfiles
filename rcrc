@@ -1,0 +1,2 @@
+EXCLUDES="README.md LICENSE"
+DOTFILES_DIRS="$HOME/dotfiles-x11 $HOME/dotfiles-private-local $HOME/dotfiles-local $HOME/dotfiles-private $HOME/dotfiles"

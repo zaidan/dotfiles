@@ -1,0 +1,8 @@
+# Pretty print the path
+alias path='echo $PATH | tr -s ":" "\n"'
+
+# Include custom aliases
+[[ -f ~/.aliases.private ]] && source ~/.aliases.private
+[[ -f ~/.aliases.local ]] && source ~/.aliases.local
+[[ -f ~/.aliases.private.local ]] && source ~/.aliases.private.local
+[[ -f ~/.aliases.x11 ]] && source ~/.aliases.x11

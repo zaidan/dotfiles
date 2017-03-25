@@ -1,0 +1,7 @@
+[push]
+  default = current
+
+[include]
+  path = ~/.gitconfig.private
+  path = ~/.gitconfig.local
+  path = ~/.gitconfig.private.local
