@@ -5,3 +5,6 @@
   path = ~/.gitconfig.private
   path = ~/.gitconfig.local
   path = ~/.gitconfig.private.local
+
+[alias]
+    wdiff = diff --color-words
