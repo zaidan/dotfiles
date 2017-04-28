@@ -30,7 +30,7 @@ vnoremap <leader><leader>i :RRenameInstanceVariable<cr>
 vnoremap <leader><leader>em  :RExtractMethod<cr>
 
 " Indent Ruby Hashs with \iv
-function IndentV()
+function! IndentV()
   Tabularize /^[^:]*\zs:/r1c0l0
   Tabularize /^[^=>]*\zs=>/r1
   "Tabularize /^[^{]*\zs{/r1
