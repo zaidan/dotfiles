@@ -29,6 +29,10 @@ Plugin 'splitjoin.vim'
 " Templates
 Plugin 'slim-template/vim-slim.git'
 
+" SCSS
+Plugin 'cakebaker/scss-syntax.vim'
+Plugin 'hail2u/vim-css3-syntax'
+
 " C
 "Plugin 'c.vim'
 
