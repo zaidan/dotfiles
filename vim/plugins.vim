@@ -30,7 +30,7 @@ Plugin 'splitjoin.vim'
 "Plugin 'c.vim'
 
 " GDB
-"Plugin 'Conque-GDB'
+Plugin 'Conque-GDB'
 
 " Coffee Script
 Plugin 'vim-coffee-script'
