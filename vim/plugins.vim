@@ -26,6 +26,9 @@ Plugin 'splitjoin.vim'
 "Plugin 'rson/vim-conque'
 "Plugin 'skwp/vim-ruby-conque'
 
+" Templates
+Plugin 'slim-template/vim-slim.git'
+
 " C
 "Plugin 'c.vim'
 
