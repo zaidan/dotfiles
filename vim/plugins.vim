@@ -79,6 +79,10 @@ Plugin 'SudoEdit.vim'
 Plugin 'lambdatoast/elm.vim'
 "Plugin 'elmcast/elm-vim'
 
+" Openscad
+"Plugin 'sirtaj/vim-openscad'
+Plugin 'oysteinkrog/vim-openscad'
+
 " Colors
 Plugin 'Wombat'
 call vundle#end()
