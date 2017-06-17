@@ -254,7 +254,7 @@ au BufNewFile,BufRead,BufEnter   *.wiki    setlocal spell    spelllang=en_us
 au BufNewFile,BufRead,BufEnter   *.md      setlocal spell    spelllang=en_us
 au BufNewFile,BufRead,BufEnter   *.txt     setlocal spell    spelllang=en_us
 au BufNewFile,BufRead,BufEnter   README    setlocal spell    spelllang=en_us
-au BufNewFile,BufRead,BufEnter   *.tex     setlocal spell    spelllang=de_de
+au BufNewFile,BufRead,BufEnter   *.tex     setlocal spell    spelllang=en_us,de_de
 
 if filereadable(expand("~/.vim/general.private.vim"))
   source ~/.vim/general.private.vim
