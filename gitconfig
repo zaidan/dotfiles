@@ -8,3 +8,5 @@
 
 [alias]
     wdiff = diff --color-words
+[color]
+	ui = auto
