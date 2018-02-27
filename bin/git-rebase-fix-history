@@ -1,0 +1,2 @@
+#!/bin/bash
+git rebase master --exec 'git commit --amend --date=now && sleep 1'
