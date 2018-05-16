@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+git log --pretty=format:'* %s' --reverse master..HEAD
