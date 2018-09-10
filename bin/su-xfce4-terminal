@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+if [ -z "$1" ]; then
+  echo "usage: $0 user"
+  exit 1
+fi
+
+sudo su - $1 -c 'DISPLAY=:0 xfce4-terminal > /dev/null &'
