@@ -15,6 +15,7 @@ Plugin 'ruby.vim'
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-bundler'
 Plugin 'ecomba/vim-ruby-refactoring'
+Plugin 'ngmy/vim-rubocop'
 " Rubyblocs
 "Plugin 'ruby-matchit'
 Plugin 'kana/vim-textobj-user'
