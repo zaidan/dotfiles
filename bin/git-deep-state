@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+find . -name ".git" | xargs dirname | sort | xargs -I '{}' bash -c \
+  "echo; echo; echo {}; cd {}; git log -n 1 --pretty=format:'%s (%h)' | cat" \
+  | more
