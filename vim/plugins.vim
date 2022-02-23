@@ -8,6 +8,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " Languages
+Plugin 'sheerun/vim-polyglot'
 
 " Ruby
 Plugin 'skwp/vim-rspec'
@@ -34,6 +35,16 @@ Plugin 'slim-template/vim-slim.git'
 " SCSS
 Plugin 'cakebaker/scss-syntax.vim'
 Plugin 'hail2u/vim-css3-syntax'
+Plugin 'ap/vim-css-color'
+
+" JavaScript
+Plugin 'styled-components/vim-styled-components'
+"Plugin 'yuezk/vim-js'
+Plugin 'pangloss/vim-javascript'
+Plugin 'maxmellon/vim-jsx-pretty'
+Plugin 'Quramy/vim-js-pretty-template'
+Plugin 'leafgarland/typescript-vim'
+Plugin 'jparise/vim-graphql'
 
 " C
 "Plugin 'c.vim'
@@ -151,6 +162,26 @@ autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in
 
 " Open NERDTree automatically when vim starts up if no files were specified
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+" }}}
+
+" Javascript/CSS {{{
+
+let g:jsx_ext_required = 0 " Works on files other than .jsx
+
+if has('autocmd')
+  " Support `-` in css property names
+  augroup VimCSS3Syntax
+    autocmd!
+    autocmd FileType css setlocal iskeyword+=-
+  augroup END
+
+  call jspretmpl#register_tag('gql', 'graphql')
+  autocmd FileType javascript.jsx JsPreTmpl
+  autocmd FileType javascript JsPreTmpl
+endif
+
+"let g:vim_jsx_pretty_colorful_config = 1
+
 " }}}
 
 " }}}
