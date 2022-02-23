@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+
+arg1=$1
+
+pager() {
+  if [ "$arg1" = "--fix" ]; then
+    cat
+  else
+    less --tabs=4 -RFXS --pattern '^(Date|added|deleted|modified): '
+  fi
+}
+
+crystal tool format --no-color --check 2>&1 | \
+  sed  "s|formatting '\(.*\)' produced changes|\1|g" | \
+  tr "\n" "\0" | \
+  xargs -0 -n1 -I% bash -c 'colordiff \
+    --label "$1" -u <(cat "$1") \
+    --label "$1" <(cat "$1" | \
+  crystal tool format --check - 2> /dev/null)' _ % | \
+  diff-so-fancy | pager
+
+if [ "$arg1" = "--fix" ]; then
+  crystal tool format
+else
+  echo "Run \`crystal-format --fix\` to fix issues"
+fi
