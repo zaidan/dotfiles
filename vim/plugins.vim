@@ -39,7 +39,8 @@ Plugin 'hail2u/vim-css3-syntax'
 "Plugin 'c.vim'
 
 " GDB
-Plugin 'Conque-GDB'
+"Plugin 'Conque-GDB'
+Plugin 'bubuntux/Conque-GDB.git'
 
 " Coffee Script
 Plugin 'vim-coffee-script'
